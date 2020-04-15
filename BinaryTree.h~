@@ -1,0 +1,21 @@
+#ifndef BINARYTREE_H
+#define  BINARYTREE_H
+#include <iostream>
+#include "ItemType.h"
+
+const int MAX_ITEM=5 ;
+  struct Node{
+    ItemType key;
+    Node *left;
+    Node *right
+    
+  };
+
+class CircularLinkedList{
+public:
+  BinaryTree();
+  
+private:
+  Node *root;
+};
+#endif
