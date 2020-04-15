@@ -7,11 +7,10 @@ const int MAX_ITEM=5 ;
   struct Node{
     ItemType key;
     Node *left;
-    Node *right
-    
+    Node *right;
   };
 
-class CircularLinkedList{
+class BinaryTree{
 public:
   BinaryTree();
   ~BinaryTree();
