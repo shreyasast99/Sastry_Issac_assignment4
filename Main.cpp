@@ -4,6 +4,7 @@
 using namespace std;
 int main(int argc, char *argv[]){
     BinaryTree list;
+    bool found;
     string userInput="";
     ItemType item;
     int input;//input
@@ -50,19 +51,22 @@ int main(int argc, char *argv[]){
 	  cout<<"Item to be retrieved";
 	  cin>>number;
 	  temp.initialize(number);
-	  list.retrieve(temp,true); //need to fix
+	  list.retrieve(temp,found); //need to fix
         }
 	else if(userInput.compare("l")==0){
 	  cout<<"\nList Length: "<<list.getLength();
         }
         else if(userInput.compare("n")==0){
-	  cout<<"In-order: "<<list.inOrder();
+	  cout<<"In-order: ";
+	  list.inOrder();
         }
         else if(userInput.compare("p")==0){
-	  cout<<"Pre-order: "<<list.preOrder();
+	  cout<<"Pre-order: ";
+	  list.preOrder();
         }
         else if(userInput.compare("o")==0){
-	  cout<<"Post-order: "<<list.postOrder();
+	  cout<<"Post-order: ";
+	  list.postOrder();
         }
         else if(userInput.compare("c")==0){
 	  cout<<"Item to find same level nonsiblings: ";

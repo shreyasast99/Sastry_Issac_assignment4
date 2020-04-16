@@ -21,6 +21,7 @@ public:
   void inOrder() const;
   void postOrder() const;
   int getLength() const;
+  //int CountNodes(Node* tree);
   void getSameLevelNonsiblings(ItemType &key);
   
 private:
