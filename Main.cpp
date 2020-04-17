@@ -42,16 +42,29 @@ int main(int argc, char *argv[]){
             cout<<"Item to delete: ";
             cin>>number;
             temp.initialize(number);
-            list.deleteItem(temp);
+            list.retrieve(temp,found);
+            if(found==true){
+                list.deleteItem(temp);
+            }
+            else{
+                cout<<"Item not in tree.";
+            }
             cout<<"\nIn-Order: ";
             list.inOrder();
             cout<<endl;
         }
         else if(userInput.compare("r")==0){
-	  cout<<"Item to be retrieved";
+	  cout<<"Item to be retrieved: ";
 	  cin>>number;
+      cout<<endl;
 	  temp.initialize(number);
 	  list.retrieve(temp,found); //need to fix
+      if(!found){
+          cout<<"Item not in tree."<<endl;
+      }
+      else{
+          cout<<"Item found in tree."<<endl;
+      }
         }
 	else if(userInput.compare("l")==0){
 	  cout<<"\nList Length: "<<list.getLength();

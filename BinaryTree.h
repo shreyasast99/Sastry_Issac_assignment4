@@ -23,7 +23,7 @@ public:
   int getLength() const;
   //int CountNodes(Node* tree);
   void getSameLevelNonsiblings(ItemType &key);
-  
+    
 private:
   Node *root;
 };
