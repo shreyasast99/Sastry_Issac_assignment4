@@ -6,6 +6,7 @@ using namespace std;
 BinaryTree::BinaryTree(){
 }
 BinaryTree::~BinaryTree(){
+    //delete root;
 }
 
 void PutItem(Node*& tree, ItemType item);
